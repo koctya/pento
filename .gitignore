@@ -1,6 +1,8 @@
 elm-stuff
 node_modules
 npm-debug.log
+_build
+deps
 dist
 log
 tmp
