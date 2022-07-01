@@ -17,3 +17,10 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Forum: https://elixirforum.com/c/phoenix-forum
   * Source: https://github.com/phoenixframework/phoenix
+
+
+# Pheonix Generators
+
+## Liveview
+
+    ➜  pento git:(master) ✗ mix phx.gen.live Catalog Product products name:string description:string unit_price:float sku:integer:unique
