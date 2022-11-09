@@ -9,6 +9,7 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+alias Pento.Accounts
 alias Pento.Catalog
 
 products = [
@@ -33,4 +34,19 @@ products = [
 
 Enum.each(products, fn product ->
   Catalog.create_product(product)
+end)
+
+users = [
+  %{
+    email: "player1@example.com",
+    password: "player1_pwd"
+  },
+  %{
+    email: "admin@example.com",
+    password: "admin_pwd1"
+  }
+]
+
+Enum.each(users, fn user ->
+  Accounts.register_user(user)
 end)

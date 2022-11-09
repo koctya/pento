@@ -34,7 +34,7 @@ defmodule PentoWeb.LiveHelpers do
         phx-click-away={JS.dispatch("click", to: "#close")}
         phx-window-keydown={JS.dispatch("click", to: "#close")}
         phx-key="escape"
-      >
+      >1
         <%= if @return_to do %>
           <%= live_patch "✖",
             to: @return_to,
