@@ -11,7 +11,7 @@ defmodule PentoWeb.WrongLive do
         score: 0,
         message: "Make a guess:",
         time: time,
-        session_id: session["live_socket_id"],
+        session_id: session["live_socket_id"]
         # current_user: user
       )
     }

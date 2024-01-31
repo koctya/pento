@@ -6,7 +6,10 @@ defmodule PentoWeb.ProductLive.Index do
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, stream(socket, :products, Catalog.list_products())}
+    {:ok,
+      socket
+      |> assign(:greeting, "Welcome to Pento!")
+      |> stream(:products, Catalog.list_products())}
   end
 
   @impl true
@@ -33,7 +36,10 @@ defmodule PentoWeb.ProductLive.Index do
   end
 
   @impl true
-  def handle_info({PentoWeb.ProductLive.FormComponent, {:saved, product}}, socket) do
+  def handle_info(
+      {PentoWeb.ProductLive.FormComponent,
+      {:saved, product}},
+      socket) do
     {:noreply, stream_insert(socket, :products, product)}
   end
 

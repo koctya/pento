@@ -1,3 +1,4 @@
+<h1 class="text-2xl font-bold"><%= @greeting %></h1>
 <.header>
   Listing Products
   <:actions>
@@ -6,6 +7,7 @@
     </.link>
   </:actions>
 </.header>
+<pre><%= #inspect assigns, pretty: true %></pre>
 
 <.table
   id="products"
