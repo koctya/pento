@@ -53,6 +53,7 @@ defmodule Pento.MixProject do
       {:decimal, "~> 2.0"},
       {:dns_cluster, "~> 0.1.1"},
       {:plug_cowboy, "~> 2.5"},
+      {:contex, "~> 0.4.0"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end

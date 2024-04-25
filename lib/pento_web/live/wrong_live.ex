@@ -1,6 +1,6 @@
 defmodule PentoWeb.WrongLive do
   use PentoWeb, :live_view
-  alias Pento.Accounts
+  # alias Pento.Accounts
 
   def mount(_params, session, socket) do
     # user = Accounts.get_user_by_session_token(session["user_token"])

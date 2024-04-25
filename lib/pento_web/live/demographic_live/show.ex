@@ -2,6 +2,7 @@ defmodule PentoWeb.DemographicLive.Show do
   use Phoenix.Component
   use Phoenix.HTML
   alias Pento.Survey.Demographic
+  alias PentoWeb.CoreComponents
 
   attr :demographic, Demographic, required: true
   @spec details(map()) :: Phoenix.LiveView.Rendered.t()
